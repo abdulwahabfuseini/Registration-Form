@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.animated-background{
+    height: 100vh;
+    width: 100%;
+    background:  linear-gradient(to right,blue,red,aqua);
+    background-size: 400% 400%;
+    animation: animated-background 10s infinite ease-in-out;
+}
+@keyframes animated-background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0;
+    }
+}
+.fendi{
+    height: 90vh;
+    width: 23%;
+    top: 6%;
+    left: 5%;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+.fendi h1{
+    top: 6%;
+    left: 4%;
+    position: absolute;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+    font-weight: 900;
+}
+.fendi h1 span{
+    top: 95%;
+    left: 8%;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.fendi p{
+    top: 18%;
+    left: 3.7%;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+    font-weight: 700;
+}
+.fendi h2{
+    top: 33%;
+    left: 14%;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.logo{
+    display: flex;
+    position: relative;
+    top: 42%;
+    left: 6%;
+    width: 91%;
+}
+.bosslyn{
+    height: 90vh;
+    width: 65%;
+    top: 6%;
+    left: 28.3%;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.bosslyn h1{
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding: 40px 250px;
+}
+.bosslyn h3{
+    display: flex;
+    position: relative;
+    padding: 0 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.input-group{
+    position: relative;
+    width: 100%;
+    top: 38%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    padding: 10px 0px;
+    align-items: center;
+}
+.input{
+    padding: 14px 10px 14px 50px;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    color: blue;
+    background-color: transparent;
+    outline: 2px solid white;
+    margin-right: 12px;
+    cursor: pointer;
+   
+}
+.input-label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+    padding: 0 40px;
+}
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform: translate(10px, -14px) scale(.8);
+    color: #fff;
+    padding-inline: 15px;
+    background-color: blue;
+    font-size: 25px;
+}
+.input-lab{
+    position: absolute;
+    top: 10px;
+    left: 29%;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+    padding: 0 40px;
+}
+.input:focus+.input-lab,
+.input:valid+.input-lab {
+    transform: translate(27px, -14px) scale(.8);
+    color: #fff;
+    padding-inline: 18px;
+    background-color: blue;
+    font-size: 25px;
+}
+.input-la{
+    position: absolute;
+    top: 10px;
+    left: 59%;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+    padding: 0 40px;
+}
+.input:focus+.input-la,
+.input:valid+.input-la {
+    transform: translate(27px, -14px) scale(.8);
+    color: #fff;
+    padding-inline: 18px;
+    background-color: blue;
+    font-size: 25px;
+}
+.input:is(:focus, :valid) {
+    outline-color: #fff;
+}
+.input:is(:focus, :valid) {
+    outline-color: blue;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    padding: 3px;
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid yellow;
+    position: relative;
+    padding: 12px 38px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: absolute;
+    top: 88%;
+    left: 40%;
+}
+.button:hover{
+    background: red;
+    border: 4px solid blue;
+    color: yellow;
+}
